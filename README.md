@@ -47,8 +47,6 @@ Request
 name:ROUTE 3
 level: 2
 ``` json
-
-Response
 {
     "ROUTE 3": {
         "ROUTE 1": []
