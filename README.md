@@ -43,10 +43,10 @@ $php scripts/MigrateScript.php
 
 #### Return specify routes by name and hierarchy level 
 (GET /routes)
-``` json
 Request
 name:ROUTE 3
 level: 2
+``` json
 
 Response
 {
