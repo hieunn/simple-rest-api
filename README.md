@@ -11,7 +11,15 @@ modify DB_*
 
 #Run migration
 $php scripts/MigrateScript.php
+
+#Run docker 
+$docker pull hieunn93/simple-rest-api
+
+$docker-compose up
+
 ```
+Open browser 
+http://localhost:8000/
 
 ### API endpoints:
 #### Create routes with a hierarchy 
