@@ -78,9 +78,8 @@ class RoutesController extends BaseController
         $childsNumber = count($listChilds);
 
         //Prepare range for search
-        $max = $route->getRgt() - (($childsNumber / $filters['level']) + $filters['level']);
+        $max = $route->getRgt() - (($childsNumber / $filters['level']) * $filters['level']);
         $min = $route->getLft();
-        $max = (($max - $filters['level']) < ($min + $filters['level'])) ? $route->getRgt() : $max;
 
         $search = [
             'max' => $max,
